@@ -29,7 +29,7 @@ async function main() {
   
   if (network.config.chainId === 421613  && typeof process.env.ETHERSCAN_ARBITRUM_API_KEY !== 'undefined' || network.config.chainId === 42161 && typeof process.env.ETHERSCAN_ARBITRUM_API_KEY !== 'undefined'  ) {
 
-    const RPC_URL = (network.config.chainId === 42161 ) ? ARBITRUM_MAINNET_RPC_URL : process.env.ARBITRUM_TESTNET_RPC_URL;
+    const RPC_URL = (network.config.chainId === 42161 ) ? process.env.ARBITRUM_MAINNET_RPC_URL : process.env.ARBITRUM_TESTNET_RPC_URL;
     const etherscanURL = (network.config.chainId === 42161 ) ? 'https://arbiscan.io/address/' : 'https://goerli.arbiscan.io/address/';
     const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
 
