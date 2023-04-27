@@ -1,0 +1,6 @@
+ARBITRUM_WALLET_PRIVATE_KEY = Your Private Key
+
+ARBITRUM_TESTNET_RPC_URL = https://goerli-rollup.arbitrum.io/rpc/
+ARBITRUM_MAINNET_RPC_URL = https://arb1.arbitrum.io/rpc
+
+ETHERSCAN_ARBITRUM_API_KEY = Your EtherScan API Key 
